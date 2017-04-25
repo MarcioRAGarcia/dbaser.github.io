@@ -1,8 +1,13 @@
 ---
-layout: post
 title: Hardcoding. Basura para unos, tesoro para otros
-category: web_scraping
-tags: [hardcoding, web scraping, inegi]
+date: 2014-09-02 00:00:00 Z
+categories:
+- web_scraping
+tags:
+- hardcoding
+- web scraping
+- inegi
+layout: post
 ---
 
 Hace más de un año que doy clases en la [UANL](http://www.uanl.mx/){:target="_blank"}. Me resulta bastante interesante por un muchas razones que por el momento prefiero omitir. Durante este tiempo, me he dado cuenta como aprenden diferentes tipos de personas. He encontrado perfiles de todo tipo; desde los que necesitan una guía paso a paso, hasta los que se adelantan en los temas todo el tiempo.

@@ -1,8 +1,13 @@
 ---
-layout: post
 title: De Wordpress a Github
-category: blog
-tags: [wordpress, github, blog]
+date: 2016-05-22 00:00:00 Z
+categories:
+- blog
+tags:
+- wordpress
+- github
+- blog
+layout: post
 ---
 
 Dos años fueron necesarios para tomar la decisión; siempre tuve en mente que mis necesidades estaban cubiertas y no había mucho por hacer, hasta hace unas semanas. Por razones misteriosas, me decidí a colgar mis blog posts en algun repo de Github y recordé que hace tiempo había dejado pendiente el crear una personal start page en Github Pages. Pues todo o nada...

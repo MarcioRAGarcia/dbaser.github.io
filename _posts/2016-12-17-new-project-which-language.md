@@ -1,8 +1,13 @@
 ---
+title: "¿Qué lenguaje y herramientas debo elegir?"
+date: 2016-12-17 00:00:00 Z
+categories:
+- software
+tags:
+- languages
+- software
+- software development
 layout: post
-title: ¿Qué lenguaje y herramientas debo elegir?
-category: software
-tags: [languages, software, software development]
 ---
 
 Ya casi se acaba el año y no quiero dejar pasar la Navidad sin poder regalarles un comentario :B

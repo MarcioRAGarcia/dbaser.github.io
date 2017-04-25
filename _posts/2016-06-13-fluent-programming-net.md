@@ -1,8 +1,14 @@
 ---
-layout: post
 title: Fluent Programming .NET
-category: .net
-tags: [rfc, sat, .net, design patterns]
+date: 2016-06-13 00:00:00 Z
+categories:
+- ".net"
+tags:
+- rfc
+- sat
+- ".net"
+- design patterns
+layout: post
 ---
 
 El último año he dedicado la mitad de mi vida laboral a desarrollar *interfaces* para el manejo de registros de personas, i.e.: UI, plugins/widgets, web services, stored procedures, etc. Dentro de la información que se persiste, como parte de requerimiento de negocio, el cálculo *automático* de los diferentes tipos de identificación es indispensable. 

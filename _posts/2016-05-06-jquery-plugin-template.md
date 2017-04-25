@@ -1,8 +1,13 @@
 ---
-layout: post
 title: jQuery Plugin template
-category: jQuery
-tags: [jquery, jQuery plugin template, jQuery template boilerplate]
+date: 2016-05-06 00:00:00 Z
+categories:
+- jQuery
+tags:
+- jquery
+- jQuery plugin template
+- jQuery template boilerplate
+layout: post
 ---
 
 It had to happen, when someone is involve in a big company, taking a break it becomes complicated; so you leave the blog. I hope that it never happens to you. It's a shit..

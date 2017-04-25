@@ -1,8 +1,14 @@
 ---
-layout: post
 title: HTML5, Canvas y Matemáticas
-category: javascript
-tags: [plotting, math, canvas, html5]
+date: 2016-06-02 00:00:00 Z
+categories:
+- javascript
+tags:
+- plotting
+- math
+- canvas
+- html5
+layout: post
 ---
 
 Era finales del año 2008 cuando estaba por terminar mi tercer ciclo de carrera en la [FCFM](http://www.fcfm.uanl.mx/){:target="_blank"}; en aquel entonces cursaba la materia "*Programación Orientada a Objetos*" haciendo uso del lenguaje [JAVA](https://java.com/en/download/faq/develop.xml){:target="_blank"} y una de nuestras asignaciones finales era la de construir una pequeña aplicación donde se implementaran los temas del curso.

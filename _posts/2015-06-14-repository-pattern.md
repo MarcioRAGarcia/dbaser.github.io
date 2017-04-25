@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Patrón repositorio
-category: .NET
-tags: [patrones diseño, design patterns, .net, patterns, repository]
+date: 2015-06-14 00:00:00 Z
+categories:
+- ".NET"
+tags:
+- patrones diseño
+- design patterns
+- ".net"
+- patterns
+- repository
+layout: post
 ---
 
 Con el tema en moda *-aunque algo oldie-* de [aplicaciones orientadas al dominio](https://en.wikipedia.org/wiki/Domain-driven_design){:target="_blank"}, seguramente nos hemos llenado la cabeza de conceptos relacionados. Existen montones de implementaciones, y particularmente para los que viajamos al mundo de .NET, tenemos la referencia de [DDD N-Layered .NET 4.0 Architecture Guide](https://blogs.msdn.microsoft.com/marblogging/2011/05/23/domain-drive-design-n-layered-net-4-0-architecture-guide/){:target="_blank"}.

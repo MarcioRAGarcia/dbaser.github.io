@@ -1,8 +1,15 @@
 ---
-layout: post
 title: Web testing - Canopy
-category: blog
-tags: [testing, test, webtesting, canopy, fsharp]
+date: 2014-08-20 00:00:00 Z
+categories:
+- blog
+tags:
+- testing
+- test
+- webtesting
+- canopy
+- fsharp
+layout: post
 ---
 
 Generalmente <del>no paso</del> trato de no pasar de largo las pruebas. Ya sean unitarias, *-a puro ojo-*, de integración, funcionales, etc. Siempre con el fin, obviamente, de mejorar la calidad. Últimamente tengo un poco descuidado este tema entre mis actividades diarias, asi que algo de esto me cae bastante bien.
