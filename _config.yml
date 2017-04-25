@@ -1,0 +1,44 @@
+---
+title: Dbaser.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+name: Mig Salazar
+author: Mig Salazar
+url: http://migsalazar.com
+description: Debugging stories, coding, hacking and sarcasm
+repository: migsalazar/migsalazar.github.io
+permalink: "/:year/:month/:day/:title/"
+twitter:
+  username: migsalazar_
+include:
+- ".htaccess"
+exclude:
+- README.md
+- LICENSE
+sass:
+  style: compresseds
+  sass_dir: _sass
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+pigments: true
+gems:
+- github-pages
+- jekyll-gist
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+whitelist:
+- github-pages
+- jekyll-gist
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
