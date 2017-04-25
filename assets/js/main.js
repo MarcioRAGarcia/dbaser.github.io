@@ -6,12 +6,12 @@ $(function() {
       //config
       var disqus_config = function () {
         this.page.url = '{{ site.url }}';
-        this.page.identifier ='migsalazar';
+        this.page.identifier ='dbaser';
       };
 
       var d = document,
           s = d.createElement('script');
-      s.src = '//migsalazar.disqus.com/embed.js';
+      s.src = '//dbaser.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.header || d.body).appendChild(s);
 
@@ -42,7 +42,7 @@ $(function() {
     	//delay between words
     	delay: 250,
     	//text type
-    	text: ['Mig<i>.</i>notes'],
+    	text: ['ctfs<i>.</i>write-ups!'],
     	//callback
     	onTyped: function() { }
 	};
