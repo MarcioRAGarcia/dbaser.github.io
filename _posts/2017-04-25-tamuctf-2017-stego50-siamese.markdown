@@ -8,8 +8,6 @@ tags:
 - tamuctf
 ---
 
-# TAMUctf: Stego50: Siamese
-
 **Category:** Stego
 **Points:** 50
 **Solves:** 324
