@@ -1,5 +1,5 @@
 ---
-title: Dbaser.Github.Io
+title: ctfs, write-ups and hacking n' roll!
 timezone: UTC
 collections:
   posts:
@@ -8,14 +8,12 @@ collections:
   uploads:
     title: Uploads
     output: true
-name: Mig Salazar
-author: Mig Salazar
-url: http://migsalazar.com
-description: Debugging stories, coding, hacking and sarcasm
-repository: migsalazar/migsalazar.github.io
+name: dbaser
+author: dbaser
+url: dbaser.github.io
+description: ctfs, write-ups and hacking n' roll!
+repository: dbaser/dbaser.github.io
 permalink: "/:year/:month/:day/:title/"
-twitter:
-  username: migsalazar_
 include:
 - ".htaccess"
 exclude:
