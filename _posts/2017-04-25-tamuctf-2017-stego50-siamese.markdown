@@ -17,10 +17,7 @@ tags:
 let´s see what the type of [file](https://github.com/dbaser/ctfs/blob/master/TAMUctf-2017/for50-siamese/8ff4da2f7368f800)
 
 ```bash
-file 8ff4da2f7368f800
+$ file 8ff4da2f7368f800
 
 8ff4da2f7368f800: GIF image data, version 89a, 320 x 180
 ```
-
-
-![for50-siamese-01.png](/uploads/for50-siamese-01.png)
