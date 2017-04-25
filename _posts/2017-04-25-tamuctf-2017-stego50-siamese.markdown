@@ -10,7 +10,7 @@ tags:
 
 - Stego - 50 Points
 
-> The internet loves cats. Whats not to love?
+The internet loves cats. Whats not to love?
 
 # Write-up
 
