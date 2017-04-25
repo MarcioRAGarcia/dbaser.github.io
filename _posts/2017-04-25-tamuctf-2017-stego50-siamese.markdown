@@ -8,13 +8,14 @@ tags:
 - tamuctf
 ---
 
-- Stego - 50 Points
+Stego - 50 Points
 
 The internet loves cats. Whats not to love?
 
 # Write-up
 
-let´s see what the type of [file](https://github.com/dbaser/ctfs/blob/master/TAMUctf-2017/for50-siamese/8ff4da2f7368f800)
+let´s see what the type of [file]
+(https://github.com/dbaser/ctfs/blob/master/TAMUctf-2017/for50-siamese/8ff4da2f7368f800)
 
 ```bash
 $ file 8ff4da2f7368f800
