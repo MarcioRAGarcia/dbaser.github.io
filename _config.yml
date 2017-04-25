@@ -22,7 +22,7 @@ exclude:
 - README.md
 - LICENSE
 sass:
-  style: :compresseds
+  style: compresseds
   sass_dir: _sass
 markdown: kramdown
 kramdown:
