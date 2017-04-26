@@ -20,14 +20,6 @@ end
 {% endhighlight %}
 
 
-```
-
-\$ file 39e5b7d2b46fddf6
-
-39e5b7d2b46fddf6: PC bitmap, Windows 3.x format, 2988 x 1573 x 24
-
-```
-
 ```python
 import sys
 def main():
@@ -42,3 +34,17 @@ def main():
 if __name__ == '__main__': 
     main()
 ```
+
+{% highlight python %}
+import urllib2
+[...]
+{% endhighlight %}
+
+```python
+import urllib2
+[...]
+```
+~~~python
+import urllib2
+[...]
+~~~
