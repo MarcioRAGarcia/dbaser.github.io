@@ -8,7 +8,7 @@ tags:
 - tamuctf
 ---
 
-**Category:** Stego
+**Category:** Steganography
 **Points:** 50
 **Solves:** 324
 **Description:**
