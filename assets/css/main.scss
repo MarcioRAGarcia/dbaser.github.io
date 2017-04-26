@@ -298,3 +298,9 @@ ul {
   }
 
 }
+
+pre {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
