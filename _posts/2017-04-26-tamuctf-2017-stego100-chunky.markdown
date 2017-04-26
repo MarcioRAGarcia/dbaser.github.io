@@ -24,7 +24,8 @@ FsXzE0NTBkYmJlM2ZhOTQ2ODN96;IDATx
 extract the code after `fLAg` and before `;IDATx` and convert from base64 to ascii
 
 ```bash
-$ echo "Z2lnZW17dGhlX2ZsYWdfdGhhdF9lYXRzX2xpa2VfYV9tZWFsXzE0NTBkYmJlM2ZhOTQ2ODN96" | base64 -d
+$ echo "Z2lnZW17dGhlX2ZsYWdfdGhhdF9lYXRzX2xpa2VfYV9tZWFsXzE0
+NTBkYmJlM2ZhOTQ2ODN96" | base64 -d
 
 gigem{the_flag_that_eats_like_a_meal_1450dbbe3fa94683}base64: invalid input
 ```
