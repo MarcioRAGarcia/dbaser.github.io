@@ -1,0 +1,20 @@
+---
+title: teste
+date: 2017-04-26 14:26:00 Z
+---
+
+{% highlight ruby %}
+def foo
+puts 'foo'
+end
+{% endhighlight %}
+
+    $ file 39e5b7d2b46fddf6 
+    
+    39e5b7d2b46fddf6: PC bitmap, Windows 3.x format, 2988 x 1573 x 24
+
+{% highlight bash%}
+\$ file 39e5b7d2b46fddf6
+
+39e5b7d2b46fddf6: PC bitmap, Windows 3.x format, 2988 x 1573 x 24
+{% endhighlight %}

@@ -42,7 +42,7 @@ $(function() {
     	//delay between words
     	delay: 250,
     	//text type
-    	text: ['ctfs<i>.</i>write-ups!'],
+    	text: ['my<i>.</i>write-ups!'],
     	//callback
     	onTyped: function() { }
 	};
