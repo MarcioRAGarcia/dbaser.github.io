@@ -220,7 +220,6 @@ ul {
         }
         .highlight {
             white-space: wrap;
-            overflow: scroll;
             text-overflow: ellipsis;
             margin: 10px;
             margin-bottom: 15px;
@@ -301,6 +300,5 @@ ul {
 
 pre {
     white-space: wrap;
-    overflow: scroll;
     text-overflow: ellipsis;
 }
