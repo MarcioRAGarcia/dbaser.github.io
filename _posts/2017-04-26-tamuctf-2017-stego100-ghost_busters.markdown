@@ -14,7 +14,7 @@ date: 2017-04-26 01:50:00 Z
 
 # Write-up
 
-let´s see what the type of [file](https://github.com/dbaser/ctfs/blob/master/TAMUctf-2017/stego100-ghost_busters/62beccfce5806775)
+let’s see what’s the type of the [file](https://github.com/dbaser/ctfs/blob/master/TAMUctf-2017/stego100-ghost_busters/62beccfce5806775)
 
 ```bash
 $ file 62beccfce5806775
