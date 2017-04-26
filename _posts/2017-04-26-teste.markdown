@@ -27,3 +27,18 @@ end
 39e5b7d2b46fddf6: PC bitmap, Windows 3.x format, 2988 x 1573 x 24
 
 ```
+
+```python
+import sys
+def main():
+    try:
+        Answer = 1/0
+        print  Answer
+    except:
+        print 'Program terminated'
+        sys.exit()
+    print 'You wont see this'
+
+if __name__ == '__main__': 
+    main()
+```
