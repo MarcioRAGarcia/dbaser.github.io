@@ -28,6 +28,7 @@ kramdown:
   hard_wrap: false
 highlighter: rouge
 pigments: true
+kramdown.syntax_highlighter_opts.block.line_numbers = true
 gems:
 - github-pages
 - jekyll-gist
