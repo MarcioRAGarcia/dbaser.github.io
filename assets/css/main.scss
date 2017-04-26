@@ -219,6 +219,9 @@ ul {
             background: $color-grey;
         }
         .highlight {
+            white-space: wrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             margin: 10px;
             margin-bottom: 15px;
             padding: 10px;
