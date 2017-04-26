@@ -24,7 +24,7 @@ $ file 5bcf0846dd3cf595
 5bcf0846dd3cf595: PC bitmap, Windows 3.x format, 440 x 440 x 32
 ```    
 
-run the `stegsolve` to see the flag!
+let's run the `stegsolve` tool to search the flag!
 
 ```bash
 $ java -jar stegsolve.jar  
