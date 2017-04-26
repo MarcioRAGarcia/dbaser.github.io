@@ -25,8 +25,8 @@ sass:
 markdown: kramdown
 kramdown:
   input: GFM
-  hard_wrap: true
-  syntax_highlighter: rouge
+  hard_wrap: false
+highlighter: rouge
 pigments: true
 gems:
 - github-pages
