@@ -219,8 +219,6 @@ ul {
             background: $color-grey;
         }
         .highlight {
-            white-space: wrap;
-            text-overflow: ellipsis;
             margin: 10px;
             margin-bottom: 15px;
             padding: 10px;
@@ -296,9 +294,4 @@ ul {
     font-family: 'Inconsolata', ;
   }
 
-}
-
-pre {
-    white-space: wrap;
-    text-overflow: ellipsis;
 }
