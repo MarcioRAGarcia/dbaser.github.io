@@ -16,7 +16,7 @@ The text could essentially be hiding in plain sight.
 
 ## Write-up
 
-let´s see what the type of [file](https://github.com/dbaser/ctfs/blob/master/TAMUctf-2017/stego100-jpeg_ocean/5bcf0846dd3cf595)
+let’s see what’s the type of the [file](https://github.com/dbaser/ctfs/blob/master/TAMUctf-2017/stego100-jpeg_ocean/5bcf0846dd3cf595)
 
 ```bash
 $ file 5bcf0846dd3cf595
