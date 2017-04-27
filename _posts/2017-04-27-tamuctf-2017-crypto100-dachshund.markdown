@@ -3,6 +3,7 @@ title: TAMUctf 2017 - Dachshund
 date: 2017-04-27 02:53:00 Z
 ---
 
+**Solved by** @dbaser and @shrimpgo
 **Category:** Cryptography
 **Points:** 100
 **Solves:** 66
@@ -10,7 +11,7 @@ date: 2017-04-27 02:53:00 Z
 
 > Attacking this challenge with a dachshund is your best bet at winning.
 
-## Write-up
+# Write-up
 
 let's see what's the type of the [file](https://github.com/dbaser/ctfs/blob/master/TAMUctf-2017/crypto100-dachshund/df5e76dedfe9afc0)
 
