@@ -75,7 +75,7 @@ on the [pdf](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf?) (Page 53), we
 
 but wait motherfucker! we have 29 lines of data, let's use a python script to do the work for us! :D
 
-(% gist f9f0240b726bca08de9473ab8c9cd9d6 %)
+{% gist f9f0240b726bca08de9473ab8c9cd9d6 %}
 
 run the script and get the flag!
 
