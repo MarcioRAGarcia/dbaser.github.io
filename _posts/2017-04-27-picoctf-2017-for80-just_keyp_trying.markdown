@@ -12,9 +12,7 @@ date: 2017-04-27 20:27:00 Z
 **Hints:**
 
 > Find out what kind of packets these are. What does the info column say in Wireshark/Cloudshark?
-
 > What changes between packets? What does that data look like?
-
 > Maybe take a look at [http://www.usb.org/developers/hidpage/Hut1_12v2.pdf?](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf?)
 
 # Write-up
