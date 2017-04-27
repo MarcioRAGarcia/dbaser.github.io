@@ -1,13 +1,10 @@
 ---
-title: "# TAMUctf: Crypto: Dachshund"
+title: TAMUctf 2017 - Dachshund
 date: 2017-04-27 02:53:00 Z
 published: false
 ---
 
-
-
-
-**Category:** Steganography
+**Category:** Cryptography
 **Points:** 100
 **Solves:** 66
 **Description:**
@@ -24,7 +21,7 @@ $ file df5e76dedfe9afc0
 df5e76dedfe9afc0: ASCII text, with very long lines
 ```    
 
-the content of the file given us the `n` (modulus), `e` (public exponent) and `c` (cyphertext)
+the content of the file given us the `n` (modulus), `e` (public exponent) and `c` (cyphertext), RSA crypto here.
 
 ```bash
 $ cat df5e76dedfe9afc0 
@@ -33,6 +30,27 @@ C: AR/ar3SualKVNKXZ4ox9JNlajNxTAhRRwI09n/F5LaL066s0LPZPdwwnU5r5h6oC2o2AS6vtEOwuO
 e: MzY3MTgyMDc5NDYzMjY5NDg2OTg3MDcyODc2OTg0MzE0MDM3NDg2OTA2Mjg4OTk3NTI1OTQ3MDUwOTkzNTIwNjcxNjA1NjI4MjY0MDYwMTM3Mjg4MjE4OTc2NDQ4MzkwMjEwOTQyMDYzNDM3NjAyMzc2MTk4Mjk2NTc5NjkxNDI0ODg4ODIwMDUwNDYyMTE1MTYyODMzNzY2NjUxODYxOTA1OTM3MDYxMDc2MzYzMzc5NTQ4OTIzMzE2ODgwNjIwOTc4ODg0MDkxNjM0NzExNTExMjgwOTMwNzA5MDY0MTg0MjkzMzE5NDYxMTIzMTIyNDM3MDU1NjIxOTk4ODk1OTkwNzIyMjY1NjA1OTE2MDcwMDUxMzA1MTQwNDc3MjM3MzA2MDAyMzM4OTk1MzAwNjg3NDkx
 N: NDY0NTE3NDY1NDA2Nzg1OTUzODU3NTU2NDU3NjQ5NTMxOTUwMjkzNzkyNDY5NzI5NzU5Njc1MDc1NzM1MTU2MDUxMjgxNjI5NjcwNzk3OTIyNTM5NzUyODc1ODk1NTQ2MDAyNTc4MDg3NjgxNjcwNzAzMTEwNjYxMDc4NjcxMjg2ODYxNDQzMjUwNTc5Mzg2MzU0MjQ2MjY1NTU4MjcxNTU5MDM4MTYxNTI1ODExNjU5MjAzMDcyODY2MTgzNjYzNjQzMjU1MTYzMjAxMDc4NjY1Mjg4ODk4MDQzNjYyOTc4NjQ5MjYzMzc3OTUwOTQzMDU5MTE0MDE5MDM5OTI0MjM3NjczNzExNTE1MTcyMjAzNDcxNTQyNTQzODI1Mzg1NzQ0ODc4MDc0MzU4NTU3MTg5Mzcz
 ```    
+
+ok, after searching for dachshund on google, we found a hint for the attack type, because de nickname from de dachshund is "Wiener-Dog" 
+
+![crypto100-dachsund.png](https://github.com/dbaser/CTF-Write-ups/blob/master/TAMUctf-2017/crypto100-dachshund/crypto100-dachsund.png)
+
+![dachshund.jpg](https://github.com/dbaser/CTF-Write-ups/blob/master/TAMUctf-2017/crypto100-dachshund/dachshund.jpg)
+
+there are some of types of [attacks](https://github.com/Ganapati/RsaCtfTool)
+
+Attacks :
+
+* Weak public key factorization
+* **Wiener's attack** (*wiener-dog!*)
+* Hastad's attack (Small exponent attack)
+* Small q (q<100,000)
+* Common factor between ciphertext and modulus attack
+* Fermat's factorisation for close p and q
+* Gimmicky Primes method
+* Past CTF Primes method
+* Self-Initializing Quadratic Sieve (SIQS) using Yafu
+* Common factor attacks across multiple keys
 
 after google, we found this [write-up](http://capturetheswag.blogspot.com.br/2015/04/bctf-2015-warmup-crypto-challenge.html) with the solution to this chall, only replace `n`, `e` and `c`.
 
