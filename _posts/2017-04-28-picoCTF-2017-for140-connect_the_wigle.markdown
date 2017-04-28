@@ -40,9 +40,11 @@ android_metadata  location          network
 5|9e:fe:92:99:a7:df|-73|-3.97|-1.96|141.0|4.0|1490962139
 6|c8:a4:3c:2a:f4:88|-80|-3.96|-1.96|136.0|6.0|1490968726
 7|81:6c:9b:66:06:ab|-81|-3.96|-1.95|142.0|4.0|1490966713
-...
+.
+.
+.
 ```
-...and extract lat,lon changing the separator `|` to `,` with awk
+...and extract latitude, longitude and changing the separator | to , with awk
 
 ```bash
 [dbaser@pwn4food]$ sqlite3 wigle "select lat,lon from location;" | awk -F'|' 
@@ -54,7 +56,9 @@ android_metadata  location          network
 -3.98,-1.95
 -3.97,-1.96
 -3.96,-1.96
-...
+.
+.
+.
 ```
 
 just copy and paste the results from the last command in this [site](http://www.hamstermap.com/quickmap.php) (tks @intrd 4 the site) and get the flag!
