@@ -1,5 +1,5 @@
 ---
-title: TAMUctf 2017 - JPEG Ocean
+title: TAMUctf 2017 - JPEG Ocean (Steganography)
 date: 2017-04-26 00:17:00 Z
 ---
 
