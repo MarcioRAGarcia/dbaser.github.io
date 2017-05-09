@@ -1,5 +1,5 @@
 ---
-title: TAMUctf 2017 - Least Important
+title: TAMUctf 2017 - Least Important (Steganography)
 date: 2017-04-26 02:20:00 Z
 ---
 
