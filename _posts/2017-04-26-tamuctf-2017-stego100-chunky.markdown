@@ -1,5 +1,5 @@
 ---
-title: TAMUctf 2017 - Chunky
+title: TAMUctf 2017 - Chunky (Steganography)
 date: 2017-04-26 01:19:00 Z
 ---
 
