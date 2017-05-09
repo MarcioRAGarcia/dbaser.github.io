@@ -1,5 +1,5 @@
 ---
-title: CryptoRave 2017 - Maria strikes back (Forensics)
+title: CryptoRave 2017 - Maria Strikes Back (Forensics)
 date: 2017-05-09 14:06:00 Z
 ---
 
