@@ -1,5 +1,5 @@
 ---
-title: TAMUctf 2017 - Dachshund
+title: TAMUctf 2017 - Dachshund (Cryptography)
 date: 2017-04-27 02:53:00 Z
 ---
 
