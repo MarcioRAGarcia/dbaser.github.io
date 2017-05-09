@@ -1,5 +1,5 @@
 ---
-title: picoCTF 2017 - Connect The Wigle
+title: picoCTF 2017 - Connect The Wigle (Forensics)
 date: 2017-04-28 03:08:00 Z
 ---
 
