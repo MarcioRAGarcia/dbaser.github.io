@@ -1,5 +1,5 @@
 ---
-title: TAMUctf 2017 - Siamese
+title: TAMUctf 2017 - Siamese (Steganography)
 date: 2017-04-25 18:29:00 Z
 categories:
 - write-ups
