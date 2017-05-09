@@ -1,5 +1,5 @@
 ---
-title: TAMUctf 2017 - Ghost Busters
+title: TAMUctf 2017 - Ghost Busters (Steganography)
 date: 2017-04-26 01:50:00 Z
 ---
 
