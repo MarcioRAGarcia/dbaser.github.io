@@ -6,7 +6,7 @@ $(function() {
       //config
       var disqus_config = function () {
         this.page.url = '{{ site.url }}';
-        this.page.identifier ='dbaser';
+        this.page.identifier ='MarcioRAGarcia';
       };
 
       var d = document,
