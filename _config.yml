@@ -1,5 +1,5 @@
 ---
-title: my write-ups!
+title: Write-ups e outras coisas!
 timezone: UTC
 collections:
   posts:
@@ -8,11 +8,11 @@ collections:
   uploads:
     title: Uploads
     output: true
-name: dbaser
-author: dbaser
-url: dbaser.github.io
+name: MarcioRAGarcia
+author: MarcioRAGarcia
+url: MarcioRAGarcia.github.io
 description: ctfs, write-ups and hacking n' roll!
-repository: dbaser/dbaser.github.io
+repository: MarcioRAGarcia/marcioragarcia.github.io
 permalink: "/:year/:month/:day/:title/"
 include:
 - ".htaccess"
