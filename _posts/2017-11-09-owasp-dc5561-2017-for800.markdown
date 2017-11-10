@@ -3,9 +3,9 @@ title: OWASP/DC5561 2017 - Forenses 4 (Forensics)
 date: 2017-11-09 10:06:00 Z
 ---
 
-**Category:** Forensics
-**Points:** 800
-**Description:**
+**Categoria:** Forense
+**Pontos:** 800
+**Descrição:**
 
 > We've hired a "forensics consultant", but due to a bad performance, we had to fire him...
 All we wanted to know was the password of the "dc5561" user on a specific Windows PC involved in an incident, 
@@ -16,7 +16,7 @@ Please, can you help us?
 
 The password of that user is the flag!
 
-# Write-up
+# Write-up:
 
 Ao baixar o arquivo, temos um arquivo CORROMPIDO :-(
 
