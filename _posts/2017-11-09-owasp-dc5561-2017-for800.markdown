@@ -29,16 +29,19 @@ Analisando o header com o hexeditor:
 
 Temos:
 
+```bash
 43 5A 68 39
+```
 
 Olhando no site:
 https://www.garykessler.net/library/file_sigs.html
 
 Temos uma ocorrência parecida:
 
+```bash
 42 5A 68	 BZh
 BZ2, TAR.BZ2, TBZ2, TB2		bzip2 compressed archive
-
+```
 
 Corrigimos isso usando o proprio HEXEDITOR, salvamos como bzip2
 
