@@ -42,7 +42,7 @@ $(function() {
     	//delay between words
     	delay: 250,
     	//text type
-    	text: ['<i>.</i>write-ups e outras coisas!'],
+    	text: ['<i>write-ups</i> e outras coisas!'],
     	//callback
     	onTyped: function() { }
 	};
