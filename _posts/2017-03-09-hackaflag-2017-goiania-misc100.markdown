@@ -3,9 +3,9 @@ title: HackaFlag 2017 - Goiania MISC 100
 date: 2017-03-09 09:36:00 Z
 ---
 
-**Category:** Misc
-**Points:** 100
-**Description:**
+**Categoria:** Misc
+**Pontos:** 100
+**Descrição:**
 
 >FTP
 O administrador é o usuario, preocupado com a segurança, 
