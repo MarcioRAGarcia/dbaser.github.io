@@ -11,7 +11,7 @@ collections:
 name: MarcioRAGarcia
 author: MarcioRAGarcia
 url: MarcioRAGarcia.github.io
-description: ctfs, write-ups and hacking n' roll!
+description: ctfs, write-ups and hacking!
 repository: MarcioRAGarcia/marcioragarcia.github.io
 permalink: "/:year/:month/:day/:title/"
 include:
