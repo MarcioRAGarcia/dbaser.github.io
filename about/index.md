@@ -5,7 +5,7 @@ layout: about
 
 ---
 
-ctf player of pwn4food team!
+Membro do Time pwn4food!
 
 ![p4f.png](https://pwn4food.github.io/p4f.png)
 
