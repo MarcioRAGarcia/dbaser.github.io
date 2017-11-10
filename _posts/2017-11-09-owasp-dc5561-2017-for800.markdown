@@ -1,0 +1,146 @@
+---
+title: OWASP/DC5561 2017 - Forenses 4 (Forensics)
+date: 2017-11-09 10:06:00 Z
+---
+
+**Category:** Forensics
+**Points:** 800
+**Description:**
+
+> We've hired a "forensics consultant", but due to a bad performance, we had to fire him...
+All we wanted to know was the password of the "dc5561" user on a specific Windows PC involved in an incident, 
+and yet he couldn't do it!! Unbelievable!!
+
+He said he started capturing evidence and such but, to make matters worse, it seems that the evidence file he gave us is corrupted...
+Please, can you help us?
+
+The password of that user is the flag!
+
+# Write-up
+
+Ao baixar o arquivo, temos um arquivo CORROMPIDO :-(
+
+```bash
+# file Corrupted-Evidence
+Corrupted-Evidence: data
+```
+
+Analisando o header com o hexeditor:
+
+Temos:
+
+43 5A 68 39
+
+Olhando no site:
+https://www.garykessler.net/library/file_sigs.html
+
+Temos uma ocorrência parecida:
+
+42 5A 68	 BZh
+BZ2, TAR.BZ2, TBZ2, TB2		bzip2 compressed archive
+
+
+Corrigimos isso usando o proprio HEXEDITOR, salvamos como bzip2
+
+
+Ai temos:
+
+```bash
+# file Corrupted-Evidence.bz2 
+Corrupted-Evidence.bz2: bzip2 compressed data, block size = 900k
+```
+
+Descompactando, temos:
+
+```bash
+# file Corrupted-Evidence
+Corrupted-Evidence: POSIX tar archive (GNU)
+```
+
+
+Decompactando, temos a pasta: Evidence e dentro dela:
+
+```bash
+# l Evidence/
+1073741824 out 28 14:25 evidence.out
+        79 out 28 14:09 evidence.out.sha256
+```
+
+
+Agora então, vamos trabalhar esses arquivos com o volatility.
+
+
+Primeiro, descobrir qual o tipo de imagem (Profile):
+
+```bash
+# volatility -f evidence.out imageinfo
+Volatility Foundation Volatility Framework 2.6
+INFO    : volatility.debug    : Determining profile based on KDBG search...
+          Suggested Profile(s) : Win7SP1x64, Win7SP0x64, Win2008R2SP0x64, Win2008R2SP1x64_23418, Win2008R2SP1x64, Win7SP1x64_23418
+                     AS Layer1 : WindowsAMD64PagedMemory (Kernel AS)
+                     AS Layer2 : FileAddressSpace (evidence.out)
+                      PAE type : No PAE
+                           DTB : 0x187000L
+                          KDBG : 0xf80002c500a0L
+          Number of Processors : 1
+     Image Type (Service Pack) : 1
+                KPCR for CPU 0 : 0xfffff80002c51d00L
+             KUSER_SHARED_DATA : 0xfffff78000000000L
+           Image date and time : 2017-10-28 16:03:49 UTC+0000
+     Image local date and time : 2017-10-28 14:03:49 -0200
+```
+
+
+Vamos usar o parametro hivelist para listar os arquivos e entradas de registro
+que estao na memoria e podem conter senhas (hivelist - Print list of registry hives):
+
+```bash
+# volatility --profile=Win7SP1x64 -f evidence.out hivelist
+Volatility Foundation Volatility Framework 2.6
+Virtual            Physical           Name
+------------------ ------------------ ----
+0xfffff8a000ed1010 0x000000001f333010 \??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT
+0xfffff8a0015aa010 0x000000003a916010 \??\C:\Users\dc5561\ntuser.dat
+0xfffff8a00160a010 0x000000003a7ed010 \??\C:\Users\dc5561\AppData\Local\Microsoft\Windows\UsrClass.dat
+0xfffff8a00000f010 0x0000000027206010 [no name]
+0xfffff8a000024010 0x0000000027251010 \REGISTRY\MACHINE\SYSTEM
+0xfffff8a000057010 0x00000000270c4010 \REGISTRY\MACHINE\HARDWARE
+0xfffff8a0005fd010 0x0000000021038010 \Device\HarddiskVolume1\Boot\BCD
+0xfffff8a000844010 0x0000000020b68010 \SystemRoot\System32\Config\SOFTWARE
+0xfffff8a000b2e280 0x000000001a96e280 \SystemRoot\System32\Config\DEFAULT
+0xfffff8a000d0b010 0x000000001fe11010 \SystemRoot\System32\Config\SECURITY
+0xfffff8a000d26410 0x0000000017a16410 \SystemRoot\System32\Config\SAM
+0xfffff8a000e3f010 0x000000001ef2d010 \??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT
+```
+
+Agora vamos fazer o DUMP dos Hashs presentes em:
+
+```bash
+0xfffff8a000024010 0x0000000027251010 \REGISTRY\MACHINE\SYSTEM
+0xfffff8a000d26410 0x0000000017a16410 \SystemRoot\System32\Config\SAM
+```
+
+
+```bash
+# volatility --profile=Win7SP1x64 -f evidence.out hashdump -s 0xfffff8a000d26410 -y 0xfffff8a000024010 > hashes.txt
+```
+
+No arquivo hashes.txt, temos:
+
+```bash
+# cat hashes.txt 
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+dc5561:1001:aad3b435b51404eeaad3b435b51404ee:f773c5db7ddebefa4b0dae7ee8c50aea:::
+HomeGroupUser$:1002:aad3b435b51404eeaad3b435b51404ee:c350fa3abe83f7d7b87d403c2b5a7ff1:::
+```
+
+Pronto, temos a hash da senha do usuario: dc5561 :-)
+
+
+Usando o HashKiller (https://hashkiller.co.uk/ntlm-decrypter.aspx), temos:
+
+f773c5db7ddebefa4b0dae7ee8c50aea NTLM : trustno1
+
+
+FLAG: trustno1
